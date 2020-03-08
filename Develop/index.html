@@ -27,8 +27,30 @@
 			<h1 class="display-3">Work Day Scheduler</h1>
 			<p class="lead">A simple calendar app for scheduling your work day</p>
 			<p id="currentDay" class="lead"></p>
-		</header>
-		<div class="container">
+    </header>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Day Part</th>
+          <th scope="col">Events and Notes</th>
+          <th scope="col">Save</th>
+        </tr>
+      </thead> 
+    </tbody>
+        <tr>
+          <th scope="row">8:00 AM</th>
+          <td>
+            <textarea id="userNotes"
+            placeholder="Jot down your to do item."
+            aria-label="renderNotes"
+          ></textarea>
+          </td>
+          <td>
+            <button type="btn" id="saveBtn">SAVE</button></td>
+        </tr>  
+    </tbody>
+    </table>
+		
 			<!-- Timeblocks go here -->
 		</div>
 
