@@ -8,17 +8,7 @@
 			rel="stylesheet"
 			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		/>
-		<link
-			rel="stylesheet"
-			href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-			integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-			crossorigin="anonymous"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="style.css" />
+
 		<title>Work Day Scheduler</title>
 	</head>
 
@@ -26,36 +16,19 @@
 		<header class="jumbotron">
 			<h1 class="display-3">Work Day Scheduler</h1>
 			<p class="lead">A simple calendar app for scheduling your work day</p>
-			<p id="currentDay" class="lead"></p>
-    </header>
-    <table class="table table-hover">
-      <thead>
-        <tr>
-          <th scope="col">Day Part</th>
-          <th scope="col">Events and Notes</th>
-          <th scope="col">Save</th>
-        </tr>
-      </thead> 
-    </tbody>
-        <tr>
-          <th scope="row">8:00 AM</th>
-          <td>
-            <textarea id="userNotes"
-            placeholder="Jot down your to do item."
-            aria-label="renderNotes"
-          ></textarea>
-          </td>
-          <td>
-            <button type="btn" id="saveBtn">SAVE</button></td>
-        </tr>  
-    </tbody>
-    </table>
-		
-			<!-- Timeblocks go here -->
-		</div>
+			<div id="currentDay" class="lead"></div>
+		</header>
+		<form id="dayPlan">
+			<input class="container" id="myDay"></div>
+		</form>
+		<button id="setText"> 
+			SAVE 
+		</button> 
+		<!-- Timeblocks go here -->
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 
+		<link rel="stylesheet" href="style.css" />
 		<script
 			src="https://code.jquery.com/jquery-3.4.1.js"
 			integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
