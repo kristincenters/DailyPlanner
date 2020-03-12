@@ -1,5 +1,5 @@
 var hour_8 = '8:00 AM';
-var $timeBlock_8;
+var $timeBlock_8 = '8a_notes';
 var saveBtn = $('<button>');
 //'9', '10', '11', '12', '1', '2', '3', '4'];
 //var userNoteInput = [];
@@ -13,21 +13,16 @@ $(document).ready(function() {
 	moment().hour(Number);
 
 	//render 8am time slot
-	$('form').prepend('<p>8:00 AM');
+	$('.container').prepend('<p>8:00 AM');
 	$('p')
 		.last()
-		.addClass('col');
+		.addClass('container');
 
-	//render 8am notes
-	var $timeBlock_8 = $('<input>');
-	$timeBlock8.attr('type', 'text');
-	$timeBlock8.attr('class', 'form-control');
-
-	//save 8am notes
-	$('saveBtn').on('click', function() {
-		var userInput = $('#8am-input').val();
-		//var userNotes = $("userInput" + hour_8)
+	//save user input for 8 am and save to local storage
+	$('#8AM').on('click', function() {
+		var userInput = $('#8').val();
+		var userNotes = $('userInput' + hour_8);
 		console.log(userInput);
-		localStorage.setItem('saveBtn', userInput);
+		localStorage.setItem('8AM', userInput);
 	});
 });
